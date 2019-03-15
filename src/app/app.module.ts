@@ -8,11 +8,13 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './views/index/index.component';
+import { NavbarComponent } from './views/global/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
