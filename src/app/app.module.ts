@@ -9,12 +9,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './views/index/index.component';
 import { NavbarComponent } from './views/global/navbar/navbar.component';
+import { SignupComponent } from './views/login/signup/signup.component';
+import { SigninComponent } from './views/login/signin/signin.component';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    NavbarComponent
+    NavbarComponent,
+    SignupComponent,
+    SigninComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

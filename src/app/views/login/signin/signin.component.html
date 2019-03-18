@@ -1,0 +1,49 @@
+<!-- Default form login -->
+<form class="text-center p-4">
+
+    <p class="h4">Iniciar Sesión</p>
+    <hr class="mb-4">
+
+    <!-- Email -->
+    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail" mdbInput>
+
+    <!-- Password -->
+    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+    <div class="d-flex justify-content-around">
+      <div>
+        <!-- Remember me -->
+        <mdb-checkbox [default]="true">Recordarme</mdb-checkbox>
+      </div>
+      <div>
+        <!-- Forgot password -->
+        <a href="">Olvidaste tu contraseña?</a>
+      </div>
+    </div>
+
+    <!-- Sign in button -->
+    <button mdbBtn color="info" block="true" class="my-4" type="submit">Entrar</button>
+
+    <!-- Register -->
+    <p>
+      <a routerLink="/login/signup">Crear una cuenta</a>
+    </p>
+
+    <!-- Social login -->
+    <p>o inicia sesión con tu red social favorita</p>
+
+    <a type="button" class="light-blue-text mx-2 icons">
+      <!-- <i class="fab fa-facebook-f"></i> -->
+      <mdb-icon fab icon="facebook"></mdb-icon>
+    </a>
+    <a type="button" class="light-blue-text mx-2 icons">
+      <!-- <i class="fab fa-twitter"></i> -->
+      <mdb-icon fab icon="twitter"></mdb-icon>
+    </a>
+    <a type="button" class="light-blue-text mx-2 icons">
+      <!-- <i class="fab fa-linkedin-in"></i> -->
+      <mdb-icon fab icon="linkedin"></mdb-icon>
+    </a>
+
+  </form>
+  <!-- Default form login -->

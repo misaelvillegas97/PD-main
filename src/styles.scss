@@ -2,8 +2,29 @@
 // @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
-  padding-top: 4em;
+  padding-top: 3em;
   font-family:"lucida grande",tahoma,verdana,arial,sans-serif !important;
   font-size: 11px;
+}
+
+// Scrollbar modificado
+/* Ancho */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 

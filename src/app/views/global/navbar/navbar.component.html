@@ -1,21 +1,26 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top scrolling-navbar">
   <mdb-navbar-brand>
-      <a class="navbar-brand" href="#">Navbar / text</a>
+      <a class="navbar-brand" routerLink="./">StarsTalent</a>
   </mdb-navbar-brand>
   <links>
       <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-              <a class="nav-link waves-light" href="#" mdbWavesEffect>Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link waves-light" routerLink="/index" mdbWavesEffect>Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link waves-light" href="#" mdbWavesEffect>Features</a>
+              <a class="nav-link waves-light" routerLink="/about" mdbWavesEffect>Quienes somos</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link waves-light" href="#" mdbWavesEffect>Pricing</a>
+              <a class="nav-link waves-light" routerLink="/contact" mdbWavesEffect>Contacto</a>
           </li>
       </ul>
-      <span class="navbar-text white-text">
-          Navbar text with an inline element
-      </span>
+      <!-- <span class="navbar-text white-text">
+          SignIn/SignUp
+      </span> -->
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link waves-light" routerLink="/login" mdbWavesEffect>Login</a>
+          </li>
+      </ul>
   </links>
 </mdb-navbar>
