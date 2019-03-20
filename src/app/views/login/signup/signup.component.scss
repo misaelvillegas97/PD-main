@@ -1,3 +1,52 @@
 .icons {
   font-size: 200%;
 }
+
+.form-control {
+  background-color: transparent !important
+}
+
+a.facebook {
+  color: #2b4170; /* fallback color */
+  color: -moz-linear-gradient(top, #3b5998, #2b4170);
+  color: -ms-linear-gradient(top, #3b5998, #2b4170);
+  color: -webkit-linear-gradient(top, #3b5998, #2b4170);
+}
+
+a.facebook:focus {
+  color: snow;
+  background-color: #2b4170; /* fallback color */
+  background: -moz-linear-gradient(top, #3b5998, #2b4170);
+  background: -ms-linear-gradient(top, #3b5998, #2b4170);
+  background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+  border: 1px solid #2b4170;
+  text-shadow: 0 -1px -1px #1f2f52;
+}
+
+a.twitter {
+  color: #3B5998;
+}
+
+a.twitter:focus {
+  color: snow;
+  background-color: #3B5998;
+}
+
+a.linkedin {
+  color: #3B5998;
+}
+
+a.linkedin:focus {
+  color: snow;
+  background-color: #3B5998;
+}
+
+a.instagram {
+  color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+a.instagram:focus {
+  color: snow;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}

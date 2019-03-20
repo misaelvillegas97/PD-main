@@ -1,20 +1,25 @@
 <!-- Default form login -->
-<form class="text-center p-4">
+<form class="text-center p-4" autocomplete="off">
 
     <p class="h4">Iniciar Sesión</p>
     <hr class="mb-4">
 
     <!-- Email -->
-    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail" mdbInput>
+    <div class="md-form">
+      <input mdbInput type="email" id="defaultLoginFormEmail" placeholder="tucorreo@correo.com" class="form-control">
+      <label for="defaultLoginFormEmail" class="">Correo electrónico</label>
+    </div>
 
     <!-- Password -->
-    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+    <div class="md-form pb-0 mb-0">
+      <input mdbInput type="password" id="defaultLoginFormPassword" placeholder="••••••••" class="form-control">
+      <label for="defaultLoginFormPassword" class="">Contraseña</label>
+    </div>
 
-    <div class="d-flex justify-content-around">
-      <div>
-        <!-- Remember me -->
+    <div class="d-flex justify-content-around pt-0 mt-0">
+      <!-- <div>
         <mdb-checkbox [default]="true">Recordarme</mdb-checkbox>
-      </div>
+      </div> -->
       <div>
         <!-- Forgot password -->
         <a href="">Olvidaste tu contraseña?</a>
@@ -32,17 +37,21 @@
     <!-- Social login -->
     <p>o inicia sesión con tu red social favorita</p>
 
-    <a type="button" class="light-blue-text mx-2 icons">
-      <!-- <i class="fab fa-facebook-f"></i> -->
-      <mdb-icon fab icon="facebook"></mdb-icon>
+    <a type="button" class="mx-2 icons rounded facebook">
+      <i class="fab fa-facebook-f facebook"></i>
+      <!-- <mdb-icon fab icon="facebook"></mdb-icon> -->
     </a>
-    <a type="button" class="light-blue-text mx-2 icons">
-      <!-- <i class="fab fa-twitter"></i> -->
-      <mdb-icon fab icon="twitter"></mdb-icon>
+    <a type="button" class="mx-2 icons rounded instagram">
+      <i class="fab fa-instagram"></i>
+      <!-- <mdb-icon fab icon="linkedin"></mdb-icon> -->
     </a>
-    <a type="button" class="light-blue-text mx-2 icons">
-      <!-- <i class="fab fa-linkedin-in"></i> -->
-      <mdb-icon fab icon="linkedin"></mdb-icon>
+    <a type="button" class="mx-2 icons rounded twitter">
+      <i class="fab fa-twitter"></i>
+      <!-- <mdb-icon fab icon="twitter"></mdb-icon> -->
+    </a>
+    <a type="button" class="mx-2 icons rounded linkedin">
+      <i class="fab fa-linkedin-in"></i>
+      <!-- <mdb-icon fab icon="linkedin"></mdb-icon> -->
     </a>
 
   </form>
