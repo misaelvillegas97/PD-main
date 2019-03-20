@@ -12,4 +12,10 @@ export class SigninComponent implements OnInit {
   ngOnInit() {
   }
 
+  loguear() {
+    console.log('Saved');
+    localStorage.setItem('logged', 'true');
+    return false;
+  }
+
 }
