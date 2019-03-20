@@ -7,12 +7,12 @@ import { SignupComponent } from './views/login/signup/signup.component';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: '/index',
+    path: 'index',
+    redirectTo: '/',
     pathMatch: 'full'
   },
   {
-    path: 'index',
+    path: '',
     component: IndexComponent,
     data: { title: 'Página de Inicio' }
   },
@@ -28,7 +28,12 @@ const routes: Routes = [
       {
         path: 'signup',
         component: SignupComponent
-      }
+      },
+      {
+        path: '',
+        redirectTo: '/login/signin',
+        pathMatch: 'full'
+      },
     ]
   }
 ];

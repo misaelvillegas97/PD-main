@@ -1,93 +1,87 @@
-<!-- Material form register -->
-<mdb-card>
+<!-- Default form register -->
+<form class="text-center p-2 pt-4">
 
-    <mdb-card-header class="info-color white-text text-center py-4">
-      <h5>
-        <strong>Sign up</strong>
-      </h5>
-    </mdb-card-header>
+  <p class="h4">Registrate!</p>
+  <hr class="mb-4">
+  <div class="form-row">
+    <div class="col">
+      <!-- First name -->
+      <div class="md-form pb-0 mb-0">
+        <input mdbInput type="text" id="FirstName" placeholder="David Misael" class="form-control">
+        <label for="FirstName" class="">Nombres</label>
+      </div>
+    </div>
+    <div class="col">
+      <!-- Last name -->
+      <div class="md-form pb-0 mb-0">
+        <input mdbInput type="text" id="LastName" placeholder="Villegas Sandoval" class="form-control">
+        <label for="LastName" class="">Nombres</label>
+      </div>
+    </div>
+  </div>
 
-    <!--Card content-->
-    <mdb-card-body class="px-lg-5 pt-0">
+  <!-- E-mail -->
+  <div class="md-form">
+    <input mdbInput type="email" id="email" placeholder="tucorreo@correo.com" class="form-control">
+    <label for="email" class="">Correo electrónico</label>
+  </div>
 
-      <!-- Form -->
-      <form class="text-center" style="color: #757575;">
+  <!-- Password -->
+  <div class="md-form pb-0 mb-0">
+    <input mdbInput type="password" id="password" placeholder="••••••••" class="form-control"
+      aria-describedby="psswd_help">
+    <label for="password" class="">Contraseña</label>
+  </div>
+  <small id="psswd_help" class="form-text text-muted mb-4">
+    Al menos 8 caracteres y 1 dígito.
+  </small>
 
-        <div class="form-row">
-          <div class="col">
-            <!-- First name -->
-            <div class="md-form">
-              <input type="text" id="materialRegisterFormFirstName" class="form-control" mdbInput>
-              <label for="materialRegisterFormFirstName">First name</label>
-            </div>
-          </div>
-          <div class="col">
-            <!-- Last name -->
-            <div class="md-form">
-              <input type="email" id="materialRegisterFormLastName" class="form-control" mdbInput>
-              <label for="materialRegisterFormLastName">Last name</label>
-            </div>
-          </div>
-        </div>
+  <!-- Phone number -->
+  <div class="md-form pb-0 mb-0">
+    <input mdbInput type="tel" id="phone" placeholder="+56982345678" class="form-control" aria-describedby="phone_help">
+    <label for="phone" class="">Teléfono</label>
+  </div>
+  <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+    Opcional | Para contacto.
+  </small>
 
-        <!-- E-mail -->
-        <div class="md-form mt-0">
-          <input type="email" id="materialRegisterFormEmail" class="form-control" mdbInput>
-          <label for="materialRegisterFormEmail">E-mail</label>
-        </div>
+  <!-- Newsletter -->
+  <div class="row">
+    <div class="col-md-10 mx-auto d-flex justify-content-center">
+      <mdb-checkbox [default]="true"><span class="form-text text-muted mt-0 pt-0">¿Quieres recibir nuestro contenido, noticias y novedades por correo?</span></mdb-checkbox>
+    </div>
+  </div>
 
-        <!-- Password -->
-        <div class="md-form">
-          <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock"
-            mdbInput>
-          <label for="materialRegisterFormPassword">Password</label>
-          <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-            At least 8 characters and 1 digit
-          </small>
-        </div>
+  <!-- Sign up button -->
+  <button mdbBtn block="true" class="my-4 unique-color-dark white-text" type="submit">Crear cuenta</button>
 
-        <!-- Phone number -->
-        <div class="md-form">
-          <input type="text" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock"
-            mdbInput>
-          <label for="materialRegisterFormPhone">Phone number</label>
-          <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-            Optional - for two step authentication
-          </small>
-        </div>
+  <!-- Social register -->
+  <p>o registrate con tu red social favorita:</p>
 
-        <!-- Newsletter -->
-        <mdb-checkbox>Subscribe to our newsletter</mdb-checkbox>
+  <a type="button" class="mx-2 icons rounded facebook">
+    <i class="fab fa-facebook-f facebook"></i>
+    <!-- <mdb-icon fab icon="facebook"></mdb-icon> -->
+  </a>
+  <a type="button" class="mx-2 icons rounded instagram">
+    <i class="fab fa-instagram"></i>
+    <!-- <mdb-icon fab icon="linkedin"></mdb-icon> -->
+  </a>
+  <a type="button" class="mx-2 icons rounded twitter">
+    <i class="fab fa-twitter"></i>
+    <!-- <mdb-icon fab icon="twitter"></mdb-icon> -->
+  </a>
+  <a type="button" class="mx-2 icons rounded linkedin">
+    <i class="fab fa-linkedin-in"></i>
+    <!-- <mdb-icon fab icon="linkedin"></mdb-icon> -->
+  </a>
 
-        <!-- Sign up button -->
-        <button mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0" mdbWavesEffect
-          type="submit">Sign in</button>
+  <hr>
 
-        <!-- Social register -->
-        <p>or sign up with:</p>
+  <!-- Terms of service -->
+  <p>Al presionar
+    <em>Crear Cuenta</em> estás aceptando nuestros
+    <a href="" target="_blank">terminos de servicio</a> y
+    <a href="" target="_blank">terminos de privacidad</a>. </p>
 
-        <a type="button" class="light-blue-text mx-2 icons">
-          <mdb-icon fab icon="facebook"></mdb-icon>
-        </a>
-        <a type="button" class="light-blue-text mx-2 icons">
-          <mdb-icon fab icon="twitter"></mdb-icon>
-        </a>
-        <a type="button" class="light-blue-text mx-2 icons">
-          <mdb-icon fab icon="linkedin"></mdb-icon>
-        </a>
-
-        <hr>
-
-        <!-- Terms of service -->
-        <p>By clicking
-          <em>Sign up</em> you agree to our
-          <a href="" target="_blank">terms of service</a> and
-          <a href="" target="_blank">terms of service</a>. </p>
-
-      </form>
-      <!-- Form -->
-
-    </mdb-card-body>
-
-  </mdb-card>
-  <!-- Material form register -->
+</form>
+<!-- Default form register -->
