@@ -7,7 +7,7 @@ import { SignupComponent } from './views/login/signup/signup.component';
 import { MainComponent } from './views/user_logged/main/main.component';
 
 let ruta;
-if (localStorage.getItem('logged') == 'true') {
+if (localStorage.getItem('logged') === 'true') {
   ruta = MainComponent;
 } else {
   ruta = IndexComponent;
@@ -22,6 +22,7 @@ const routes: Routes = [
   {
     path: '',
     component: ruta,
+    // component: IndexComponent,
     data: { title: 'Página de Inicio' }
   },
   {
