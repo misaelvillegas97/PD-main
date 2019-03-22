@@ -12,8 +12,10 @@ import { NavbarComponent } from './views/global/navbar/navbar.component';
 import { SignupComponent } from './views/login/signup/signup.component';
 import { SigninComponent } from './views/login/signin/signin.component';
 import { LoginComponent } from './views/login/login.component';
-import { MainComponent } from './views/user_logged/main/main.component';
-import { ProfileComponent } from './views/user_logged/profile/profile.component';
+import { MainComponent } from './views/user-logged/main/main.component';
+import { ProfileComponent } from './views/user-logged/profile/profile.component';
+import { BasicProfileCardComponent } from './views/user-logged/cards/basic-profile-card/basic-profile-card.component';
+import { MainProfileCardComponent } from './views/user-logged/cards/main-profile-card/main-profile-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProfileComponent } from './views/user_logged/profile/profile.component'
     SigninComponent,
     LoginComponent,
     MainComponent,
-    ProfileComponent
+    ProfileComponent,
+    BasicProfileCardComponent,
+    MainProfileCardComponent
   ],
   imports: [
     BrowserModule,

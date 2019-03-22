@@ -4,7 +4,7 @@ import { IndexComponent } from './views/index/index.component';
 import { LoginComponent } from './views/login/login.component';
 import { SigninComponent } from './views/login/signin/signin.component';
 import { SignupComponent } from './views/login/signup/signup.component';
-import { MainComponent } from './views/user_logged/main/main.component';
+import { MainComponent } from './views/user-logged/main/main.component';
 
 let ruta;
 if (localStorage.getItem('logged') === 'true') {
