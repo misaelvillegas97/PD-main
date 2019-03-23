@@ -5,11 +5,27 @@
 }
 
 .profile-pic-div {
-
+  // float: left;
+  text-align: center;
+  margin: 0 auto;
 }
 
 img.profile-pic {
+  margin: 0 auto;
   object-fit: cover;
-  width: 250px;
-  height: 250px;
+  width: 80px;
+  height: 80px;
+}
+
+.profile-details {
+  text-align: center;
+}
+
+a.counter {
+  text-decoration: none;
+}
+
+span.title {
+  font-weight: 600 !important;
+  color:#3f3844 !important;
 }

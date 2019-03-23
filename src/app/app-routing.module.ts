@@ -1,17 +1,11 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { IndexComponent } from './views/index/index.component';
 import { LoginComponent } from './views/login/login.component';
 import { SigninComponent } from './views/login/signin/signin.component';
 import { SignupComponent } from './views/login/signup/signup.component';
 import { MainComponent } from './views/user-logged/main/main.component';
-
-let ruta;
-if (localStorage.getItem('logged') === 'true') {
-  ruta = MainComponent;
-} else {
-  ruta = IndexComponent;
-}
+import indexPage from './session-validate.component';
 
 const routes: Routes = [
   {
@@ -21,8 +15,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: ruta,
-    // component: IndexComponent,
+    component: indexPage,
     data: { title: 'Página de Inicio' }
   },
   {

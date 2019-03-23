@@ -1,0 +1,26 @@
+.card-pub {
+  border: 1px solid #e4e4e4;
+}
+
+article {
+  // display: flex;
+  // flex-direction: column;
+}
+
+header {
+
+}
+
+.profile-pic-div {
+  // float: left;
+  // text-align: center;
+  margin: 0 auto;
+}
+
+img.profile-pic {
+  // margin: 0 auto;
+  object-fit: cover;
+  width: 30px;
+  height: 30px;
+  // border: 1px solid rgb(255, 0, 0)
+}

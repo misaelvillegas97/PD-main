@@ -16,7 +16,7 @@ import { MainComponent } from './views/user-logged/main/main.component';
 import { ProfileComponent } from './views/user-logged/profile/profile.component';
 import { BasicProfileCardComponent } from './views/user-logged/cards/basic-profile-card/basic-profile-card.component';
 import { MainProfileCardComponent } from './views/user-logged/cards/main-profile-card/main-profile-card.component';
-
+import { AdvancedPublicationCardComponent } from './views/user-logged/cards/advanced-publication-card/advanced-publication-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +28,8 @@ import { MainProfileCardComponent } from './views/user-logged/cards/main-profile
     MainComponent,
     ProfileComponent,
     BasicProfileCardComponent,
-    MainProfileCardComponent
+    MainProfileCardComponent,
+    AdvancedPublicationCardComponent
   ],
   imports: [
     BrowserModule,
