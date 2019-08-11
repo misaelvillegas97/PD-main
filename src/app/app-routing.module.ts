@@ -9,11 +9,6 @@ import indexPage from './session-validate.component';
 
 const routes: Routes = [
   {
-    path: 'index',
-    redirectTo: '/',
-    pathMatch: 'full'
-  },
-  {
     path: '',
     component: indexPage,
     data: { title: 'Página de Inicio' }
